@@ -1,0 +1,33 @@
+POST http://localhost:3001/api/cursos/programacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4, 
+    "titulo": "Aprende C++",
+    "lenguaje": "C++",
+    "vistas": 1203,
+    "nivel": "basico"
+}
+
+###
+PUT http://localhost:3001/api/cursos/programacion/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4,
+    "titulo": "Aprende C++",
+    "lenguaje": "C++",
+    "vistas": 2400,
+    "nivel": "intermedio"
+}
+
+###
+PATCH http://localhost:3001/api/cursos/programacion/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Aprende C++ Desde cero"
+}
+
+###
+DELETE  http://localhost:3001/api/cursos/programacion/4 HTTP/1.1
