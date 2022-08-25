@@ -1,0 +1,19 @@
+
+
+POST  http://localhost:3001/cursos/programacion
+
+###
+
+DELETE   http://localhost:3001/borrar
+###
+
+GET   http://localhost:3001/cursos
+
+
+###
+POST http://localhost:3001/cursos/programacion
+Content-Type: application/json
+
+{
+    "titulo": "Aprende Node.js"
+}
